@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+  <form method="POST">
+    <fieldset class="form-group mb-3">
+      <legend class="border-bottom py-3">
+        <h4>Instructions</h4>
+      </legend>
+    </fieldset>
+
+    <table class="table table-hover mb-4">
+      <thead>
+        <tr>
+          <th scope="col">SN.</th>
+          <th scope="col">Instructions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Before using this feature, make sure you've uploaded your picture to your profile.</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Click the 'Mark Attendance' button given below to turn on your webcam.</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Show your face clearly on the webcam to identify your face.</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>When the system successfully recognizes your face, press 'P' to mark your presence.</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>If you want to close the webcam window, please press 'Q'.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="form-group pt-3 mb-4">
+      <span>
+        Do you want to back to the previous page?
+        <a style="text-decoration: none;" href="{{ url_for('attendance') }}">Click Here!</a>
+      </span>
+    </div>
+  </form>
+</div>
+{% endblock %}

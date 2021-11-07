@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<article class="media content-section">
+  <form action="{{ url_for('attendance') }}" method="POST" accept-charset="utf-8">
+    <div class="media-body" style="text-align: center;">
+    <div class="article-metadata py-2 pt-3">
+      <h5>D E V E L O P E R ' S<span style="color: red"> &middot; N O T E</span></h5>
+    </div>
+
+    <div class="article-metadata py-3 mb-2">
+      <div class="media mb-4">
+        <img class="dev-img" src="{{ url_for('static', filename='extras/developer.png') }}">
+        <h4><span style="color: red">SOUROV</span> &middot; HALDER</h4>
+      </div>
+
+      <p align="Justify">I'm is a passionate <b>software developer</b> interested in web development, machine learning and tons of other stuff.
+        He love to work with algorithms and build things using <b>deep learning / machine learning</b> technology and preserve them in my
+        <a style="text-decoration: none"  href="https://github.com/sourovw">GitHub</a> profile. Sometimes I write about them on
+        <a style="text-decoration: none"  href="https://sourovw.github.io/blog">my blog.</a>
+      </p>
+    </div>
+
+    <div class="pt-2">
+      <h6><span>Click the <span style="color: red">&middot; View &middot; </span>button to go to the attendance page.</h6>
+    </div>
+  </form>
+<hr>
+  <div class="form-group mb-3">
+    <button type="submit" class="btn btn-danger">View</button>
+  </div>
+</article>
+{% endblock %}
